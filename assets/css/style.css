@@ -26,23 +26,23 @@
     #0a1f38;
   --bg-gradient-yellow-1: linear-gradient(to bottom right, #ececda, #0e2e567e);
   --bg-gradient-yellow-2: linear-gradient(135deg, #d3cae2, #e6c17a), #e6c17a;
-  --border-gradient-onyx: linear-gradient(to bottom right, #231f1f, #3f3d3d);
+  --border-gradient-onyx: linear-gradient(to bottom right, #050505, #3d393a);
   --text-gradient-yellow: linear-gradient(to right, #efefe6, #e9e9c6);
 
   /* solid */
 
   --jet: #0e2f56;
   --onyx: #0e2e56ba;
-  --eerie-black-1: #141313;
-  --eerie-black-2: #4b494a;
-  --smoky-black: #918b8c;
+  --eerie-black-1:linear-gradient(135deg, #d3cae2, #e6c17a);
+  --eerie-black-2: linear-gradient(135deg, #d3cae2, #e6c17a);
+  --smoky-black: linear-gradient(135deg, #d3cae2, #e6c17a);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: linear-gradient(135deg, #d3cae2, #e6c17a);
   --vegas-gold: #14558a;
   --light-gray: #ececda;
   --light-gray-70: #ececdabc;
-  --bittersweet-shimmer: #787273;
+  --bittersweet-shimmer: #d85a6d;
 
   /**
    * typography
