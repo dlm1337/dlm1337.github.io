@@ -9,16 +9,16 @@ Web developer
 Show Contacts
 
 Email
-richard@example.com
+dlm1337.dm@gmail.com
 
 Phone
-+1 (213) 352-2795
++1 (804) 683-7779
 
 Birthday
-June 23, 1982
+July 7, 1987
 
 Location
-Sacramento, California, USA
+Mechanicsville, VA, USA
 
 # navbar
 
