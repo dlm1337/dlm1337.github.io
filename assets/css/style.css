@@ -145,6 +145,7 @@ html {
 
 body {
   background: var(--smoky-black);
+  min-height: 1200px;
 }
 
 /*-----------------------------------*\
@@ -1761,7 +1762,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   body::-webkit-scrollbar-track {
-    background: var(--smoky-black);
+    background: --eerie-black-1;
   }
 
   body::-webkit-scrollbar-thumb {
