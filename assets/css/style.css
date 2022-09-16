@@ -1,7 +1,7 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 /**
  * copyright 2022 @codewithsadee
  */
@@ -49,7 +49,6 @@
    */
 
   /* font-family */
-  --ff-poppins: "Poppins", sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -140,12 +139,11 @@ textarea {
 }
 
 html {
-  font-family: var(--ff-poppins);
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   background: var(--smoky-black);
-  min-height: 1200px;
 }
 
 /*-----------------------------------*\
@@ -160,6 +158,7 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  min-height: 1000px;
 }
 
 .separator {
