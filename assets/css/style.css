@@ -237,7 +237,7 @@ article.active {
 
 .h5 {
   font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
 }
 
 .article-title {
@@ -336,7 +336,7 @@ main {
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
@@ -345,7 +345,7 @@ main {
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -504,7 +504,7 @@ main {
 .about-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
@@ -740,14 +740,14 @@ main {
 .modal-content time {
   font-size: var(--fs-6);
   color: var(--light-gray-70);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   margin-bottom: 10px;
 }
 
 .modal-content p {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
@@ -862,7 +862,7 @@ main {
 
 .timeline-text {
   color: var(--light-gray);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
@@ -892,7 +892,7 @@ main {
 .skill .title-wrapper data {
   color: var(--light-gray);
   font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
 }
 
 .skill-progress-bg {
@@ -932,7 +932,7 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
 }
 
 .filter-select.active .select-icon {
@@ -964,7 +964,7 @@ main {
   background: var(--eerie-black-2);
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   text-transform: capitalize;
   width: 100%;
   padding: 8px 10px;
@@ -1082,7 +1082,7 @@ main {
 .project-category {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
 }
 
 /*-----------------------------------*\
@@ -1136,7 +1136,7 @@ main {
 }
 
 .form-input::placeholder {
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
 }
 
 .form-input:focus {
@@ -1712,7 +1712,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .navbar-link {
-    font-weight: var(--fw-500);
+    font-weight: var(--fw-600);
   }
 
   /**
@@ -1864,7 +1864,7 @@ textarea.form-input::-webkit-resizer {
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-400);
   }
 
   .separator:last-of-type {
