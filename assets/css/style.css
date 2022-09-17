@@ -144,6 +144,7 @@ html {
 
 body {
   background: var(--smoky-black);
+  min-height: 1200px;
 }
 
 /*-----------------------------------*\
@@ -156,8 +157,7 @@ article {
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
-  z-index: 1;
-  min-height: 1000px;
+  z-index: 1; 
 }
 
 .sidebar {
@@ -408,7 +408,7 @@ main {
   opacity: 1;
   visibility: visible;
 }
-
+ 
 .resume {
   color: var(--orange-yellow-crayola);
 }
