@@ -409,6 +409,10 @@ main {
   visibility: visible;
 }
 
+.resume {
+  color: var(--orange-yellow-crayola);
+}
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
