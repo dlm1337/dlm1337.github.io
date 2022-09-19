@@ -83,6 +83,43 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 }
+ 
+.portfolio-modal-close-btn { 
+  position: relative;
+  display:flex;
+  width: 30px;
+  height: 30px; 
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.portfolio-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */ 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 800px; /* Full width */
+  height: auto; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.portfolio-modal-content {
+  margin: 24px;
+}
+
+#portfolio-modal-image {
+  padding-top: 30px;
+  width: 100%;
+}
 
 /*-----------------------------------*\
   #RESET
@@ -157,7 +194,7 @@ article {
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .sidebar {
@@ -408,7 +445,7 @@ main {
   opacity: 1;
   visibility: visible;
 }
- 
+
 .resume {
   color: var(--orange-yellow-crayola);
 }
@@ -1232,8 +1269,55 @@ textarea.form-input::-webkit-resizer {
 /**
  * responsive larger than 450px screen
  */
+@media (max-width: 449px) {
+  .portfolio-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Sit on top */
+    left: 50;
+    top: 50;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-width: 449px; /* Full width */
+    height: auto; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
 
+  .portfolio-modal-content {
+    margin: 24px;
+  }
+
+  #portfolio-modal-image {
+    width: 600px;
+  }
+}
 @media (min-width: 450px) {
+  .portfolio-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Sit on top */
+    left: 50;
+    top: 50;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 450px; /* Full width */
+    height: auto; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .portfolio-modal-content {
+    margin: 24px;
+  }
+
+  #portfolio-modal-image {
+    width: 600px;
+  }
   /**
    * client
    */
@@ -1251,7 +1335,29 @@ textarea.form-input::-webkit-resizer {
   /**
    * CUSTOM PROPERTY
    */
+  .portfolio-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Sit on top */
+    left: 50;
+    top: 50;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 500px; /* Full width */
+    height: auto; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
 
+  .portfolio-modal-content {
+    margin: 24px;
+  }
+
+  #portfolio-modal-image {
+    width: 100%;
+  }
   :root {
     /**
      * typography
@@ -1563,6 +1669,29 @@ textarea.form-input::-webkit-resizer {
   /**
    * REUSED STYLE
    */
+  .portfolio-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Sit on top */
+    left: 50;
+    top: 50;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 600px; /* Full width */
+    height: auto; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .portfolio-modal-content {
+    margin: 24px;
+  }
+
+  #portfolio-modal-image {
+    width: 100%;
+  }
 
   .sidebar,
   article {
@@ -1665,6 +1794,29 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 1024px) {
+  .portfolio-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Sit on top */
+    left: 50;
+    top: 50;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 800px; /* Full width */
+    height: auto; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .portfolio-modal-content {
+    margin: 24px;
+  }
+
+  #portfolio-modal-image {
+    width: 100%;
+  }
   /**
    * CUSTOM PROPERTY
    */

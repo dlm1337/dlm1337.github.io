@@ -14,6 +14,51 @@ sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
 
+// Get the gallery box
+var img1 = document.getElementById("img1");
+var img2 = document.getElementById("img2");
+var img3 = document.getElementById("img3");
+var img4 = document.getElementById("img4");
+var img5 = document.getElementById("img5");
+var img6 = document.getElementById("img6");
+
+// Get the modal image tag
+var modal = document.getElementById("myModal");
+
+var modalImage = document.getElementById("portfolio-modal-image");
+
+// When the user clicks the big picture, set the image and open the modal
+img1.onclick = function () {
+  var src = img1.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img2.onclick = function () {
+  var src = img2.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img3.onclick = function () {
+  var src = img3.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img4.onclick = function () {
+  var src = img4.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img5.onclick = function (e) {
+  var src = img5.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img6.onclick = function (e) {
+  var src = img6.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -24,6 +69,12 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
+
+const portfolioModalClose = document.getElementById("portfolio-modal-close");
+
+portfolioModalClose.addEventListener("click", async () => {
+  modal.style.display = "none";
+});
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -85,7 +136,7 @@ for (let i = 0; i < filterBtn.length; i++) {
     lastClickedBtn = this;
   });
 }
- 
+
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
