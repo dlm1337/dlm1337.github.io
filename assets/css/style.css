@@ -2,20 +2,9 @@
   #style.css
 \*-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-/**
- * copyright 2022 @codewithsadee
- */
+ 
 
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-  /**
-   * colors
-   */
-
-  /* gradient */
+:root { 
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
