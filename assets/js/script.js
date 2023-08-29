@@ -165,6 +165,5 @@ function game() {
 }
 
 function resetSidebar() {
-  sidebar.style.display = "unset";
-  mainContent.style.width = "75%";
+  sidebar.style.display = "block"; 
 }
