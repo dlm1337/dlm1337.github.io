@@ -8,6 +8,7 @@ const elementToggleFunc = function (elem) {
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const mainContent = document.querySelector("[main-content]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () {
@@ -155,4 +156,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
   });
+}
+
+function game() {
+  sidebar.style.display = "none";
+  mainContent.style.width = "100%";
+
+}
+
+function resetSidebar() {
+  sidebar.style.display = "unset";
+  mainContent.style.width = "75%";
 }

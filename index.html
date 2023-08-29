@@ -101,26 +101,26 @@
       - #main-content
     -->
 
-    <div class="main-content">
+    <div class="main-content" main-content>
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link onclick="resetSidebar()">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link onclick="resetSidebar()">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link onclick="resetSidebar()">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Location</button>
+            <button class="navbar-link" data-nav-link onclick="resetSidebar()">Location</button>
           </li>
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Game</button>
+            <button class="navbar-link" data-nav-link onclick="game()">Game</button>
           </li>
         </ul>
       </nav>
@@ -788,7 +788,7 @@
 
       <article class="game" data-page="game">
         <div style="padding-top: 100px; width: 100%;">
-          <iframe src="assets/game/Laser2.0webgl/index.html" width="800" height="600"></iframe>
+          <iframe src="assets/game/Laser2.0webgl/index.html" width="100%" height="640px"></iframe>
         </div>
       </article>
     </div>
