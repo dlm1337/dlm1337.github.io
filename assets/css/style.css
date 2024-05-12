@@ -516,7 +516,6 @@ main {
 
 /*-----------------------------------*\
   #ABOUT
-\*-----------------------------------*/
 
 .about .article-title {
   margin-bottom: 15px;
@@ -533,6 +532,7 @@ main {
   margin-bottom: 15px;
 }
 
+\*-----------------------------------*/
 /**
  * #service 
  */
@@ -1478,7 +1478,7 @@ textarea.form-input::-webkit-resizer {
 
   /**
    * #ABOUT
-   */
+
 
   .about .article-title {
     margin-bottom: 20px;
@@ -1487,7 +1487,7 @@ textarea.form-input::-webkit-resizer {
   .about-text {
     margin-bottom: 40px;
   }
-
+   */
   /* service */
 
   .service-item {
@@ -1839,7 +1839,7 @@ textarea.form-input::-webkit-resizer {
   .sidebar,
   article {
     width: 950px;
-    box-shadow: var(--shadow-5); 
+    box-shadow: var(--shadow-5);
   }
 
   /**
