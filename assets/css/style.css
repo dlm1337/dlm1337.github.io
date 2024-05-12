@@ -87,6 +87,7 @@
 
 .careerfoundry-image {
   padding: 20px;
+  width: auto;
 }
 
 /*-----------------------------------*\
@@ -1243,7 +1244,7 @@ textarea.form-input::-webkit-resizer {
  */
 @media (max-width: 449px) {
   .careerfoundry-image {
-    width: 300px;
+    width: 276px;
   }
 
   .portfolio-modal {
@@ -1274,7 +1275,7 @@ textarea.form-input::-webkit-resizer {
 
 @media (min-width: 450px) {
   .careerfoundry-image {
-    width: 340px;
+    width: 276px;
   }
 
   .portfolio-modal {
@@ -1790,7 +1791,7 @@ textarea.form-input::-webkit-resizer {
 
 @media (min-width: 1024px) {
   .careerfoundry-image {
-    width: 650px;
+    width: 640px;
   }
 
   .portfolio-modal {
@@ -1919,7 +1920,7 @@ textarea.form-input::-webkit-resizer {
 
 @media (min-width: 1250px) {
   .careerfoundry-image {
-    width: 750px;
+    width: 700px;
   }
 
   /**
