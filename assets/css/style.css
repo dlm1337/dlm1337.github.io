@@ -1469,10 +1469,6 @@ textarea.form-input::-webkit-resizer {
     min-height: 840px;
   }
 
-  .game-article {
-    min-height: 1200px;
-  }
-
   main {
     max-width: 1200px;
     margin-inline: auto;
