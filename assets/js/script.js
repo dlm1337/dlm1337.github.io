@@ -122,7 +122,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 function game() {
   sidebar.style.display = "none";
   mainContent.style.width = "100%";
-  article.style.width = "auto";
+  article.style.width = "max-content";
 
 }
 
