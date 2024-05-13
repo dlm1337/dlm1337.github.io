@@ -1458,7 +1458,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .sidebar {
-    width: 400px;  
+    width: 400px;
   }
 
   article {
@@ -1467,6 +1467,10 @@ textarea.form-input::-webkit-resizer {
 
   article {
     min-height: 840px;
+  }
+
+  .game-article {
+    min-height: 1200px;
   }
 
   main {

@@ -7,7 +7,6 @@ const elementToggleFunc = function (elem) {
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 const mainContent = document.querySelector("[main-content]");
-const article = document.getElementsByClassName("article");
 
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
@@ -122,8 +121,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 function game() {
   sidebar.style.display = "none";
   mainContent.style.width = "100%";
-  article.style.width = "max-content";
-
 }
 
 function resetSidebar() {
