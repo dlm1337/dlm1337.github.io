@@ -26,6 +26,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: #e6c17a;
+  --yellow-gold: rgb(184, 184, 69);
   --vegas-gold: #88bae3;
   --light-gray: #ececda;
   --light-gray-70: #ececdabc;
@@ -423,6 +424,10 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
+.yellow-gold {
+  color: var(--yellow-gold);
+}
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -501,7 +506,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--orange-yellow-crayola);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -509,14 +514,17 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus {
-   color: var(--orange-yellow-crayola);
+  color: var(--white-1);
 
 }
 
 .navbar-link.active {
-  color: var(--smoky-black);
+  color: var(--white-2);
 }
 
+.asset-link {
+  margin-left: 10px;
+}
 
 .asset-link:hover,
 .asset-link:focus {
