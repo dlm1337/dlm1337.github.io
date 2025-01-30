@@ -148,6 +148,7 @@ article {
   border: 2px solid var(--orange-yellow-crayola);
   border-radius: 20px;
   padding: 15px;
+  padding-bottom: 60px;
   box-shadow: var(--shadow-1);
   z-index: 1;
   height: 700px !important;

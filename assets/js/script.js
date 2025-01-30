@@ -15,9 +15,7 @@ sidebarBtn.addEventListener("click", function () {
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var img3 = document.getElementById("img3");
-var img4 = document.getElementById("img4");
-var img5 = document.getElementById("img5");
-var img6 = document.getElementById("img6");
+var img4 = document.getElementById("img4"); 
 
 var modal = document.getElementById("myModal");
 
@@ -42,17 +40,7 @@ img4.onclick = function () {
   var src = img4.lastElementChild.src;
   modal.style.display = "block";
   modalImage.src = src;
-};
-img5.onclick = function (e) {
-  var src = img5.lastElementChild.src;
-  modal.style.display = "block";
-  modalImage.src = src;
-};
-img6.onclick = function (e) {
-  var src = img6.lastElementChild.src;
-  modal.style.display = "block";
-  modalImage.src = src;
-};
+}; 
 
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
