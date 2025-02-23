@@ -105,7 +105,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
+//space shooter game
 function game() {
   sidebar.style.display = "none";
   mainContent.style.width = "100%";
