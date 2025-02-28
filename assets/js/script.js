@@ -75,7 +75,7 @@ const filterFunc = function (selectedValue) {
 };
 
 let lastClickedBtn = filterBtn[0];
-
+//determines active tab(highlights)
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
