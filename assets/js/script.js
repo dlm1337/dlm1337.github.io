@@ -41,7 +41,7 @@ img4.onclick = function () {
   modal.style.display = "block";
   modalImage.src = src;
 }; 
-
+//modal for closer view at screenshots.
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
