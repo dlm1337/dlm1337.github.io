@@ -458,10 +458,9 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--orange-yellow-crayola);
+  border-radius: 0 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -475,7 +474,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--orange-yellow-crayola);
+  color: var(--white-2);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -483,12 +482,12 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: var(--white-1);
+  color: var(--orange-yellow-crayola);
 
 }
 
 .navbar-link.active {
-  color: var(--white-2);
+  color: var(--orange-yellow-crayola);
 }
 
 .asset-link {
@@ -1401,8 +1400,6 @@ textarea.form-input::-webkit-resizer {
     left: auto;
     right: 0;
     width: max-content;
-    border-radius: 0 20px;
-    padding: 0 20px;
     box-shadow: none;
   }
 
