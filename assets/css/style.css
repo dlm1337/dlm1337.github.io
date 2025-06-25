@@ -458,7 +458,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  border: 1px solid var(--orange-yellow-crayola);
+  border: 2px solid var(--orange-yellow-crayola);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-2);
   z-index: 5;
