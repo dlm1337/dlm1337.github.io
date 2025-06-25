@@ -458,9 +458,8 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(5px);
   border: 1px solid var(--orange-yellow-crayola);
-  border-radius: 0 12px 0 0;
+  backdrop-filter: blur(10px);
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -1401,6 +1400,7 @@ textarea.form-input::-webkit-resizer {
     right: 0;
     width: max-content;
     box-shadow: none;
+    border-radius: 0 12px 0 0;
   }
 
   .navbar-list {
