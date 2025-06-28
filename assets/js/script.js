@@ -1,12 +1,26 @@
 "use strict";
 
-const elementToggleFunc = function (elem) {
-  elem.classList.toggle("active");
-};
-
-const sidebar = document.querySelector("[data-sidebar]"); 
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 const mainContent = document.querySelector("[main-content]");
- 
+const hideSideBar = document.getElementsByClassName("sidebar-info");
+
+var x = 0;
+sidebarBtn.addEventListener("click", function () {
+  if (x % 2 == 0) {
+    Array.from(hideSideBar[0].children).forEach(child => {
+      if (!child.classList.contains('info_more-btn')) {
+        child.style.display = 'none';
+      }
+    });
+  }
+  else {
+    Array.from(hideSideBar[0].children).forEach(child => {
+      child.style.display = 'block';
+    });
+  }
+  x++;
+});
 
 //determines which image to put in the modal that is for closer view of screenshots.
 var img1 = document.getElementById("img1");
