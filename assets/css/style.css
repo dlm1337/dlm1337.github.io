@@ -279,21 +279,21 @@ main {
   border: 2px solid var(--orange-yellow-crayola);
   border-radius: 20px;
   padding: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   box-shadow: var(--shadow-1);
   z-index: 1;
   margin-bottom: 15px;
-  max-height: 152px;
+  max-height: auto;
   transition: var(--transition-2);
 }
 
 .sidebar-info {
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
 .avatar-box {
@@ -301,7 +301,15 @@ main {
   border-radius: 20px;
 }
 
+.info-content {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .info-content .name {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: var(--white-2);
   font-size: var(--fs-3);
   font-weight: var(--fw-600);
@@ -324,17 +332,16 @@ main {
 }
 
 .contacts-list {
-  display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
 .contact-item {
-  font-size: 4px;
   min-width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-bottom: 8px;
 }
 
 .contact-info {
@@ -1030,15 +1037,6 @@ textarea.form-input::-webkit-resizer {
       margin-bottom: 100px;
     }
 
-    .sidebar {
-      max-height: 180px;
-      margin-bottom: 30px;
-    }
-
-    .sidebar.active {
-      max-height: 584px;
-    }
-
     .sidebar-info {
       gap: 25px;
     }
@@ -1186,11 +1184,6 @@ textarea.form-input::-webkit-resizer {
     width: 700px;
   }
 
-  .sidebar,
-  article {
-    width: 700px;
-  }
-
   .has-scrollbar::-webkit-scrollbar-button {
     width: 100px;
   }
@@ -1331,17 +1324,6 @@ textarea.form-input::-webkit-resizer {
 }
 
 @media (min-width: 1250px) {
-
-
-  .sidebar-info {
-    flex-direction: column;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-  }
-
   .careerfoundry-image {
     width: 700px;
   }
@@ -1368,10 +1350,6 @@ textarea.form-input::-webkit-resizer {
 
   body::-webkit-scrollbar-button {
     height: 60px;
-  }
-
-  .sidebar {
-    width: 400px;
   }
 
   article {
