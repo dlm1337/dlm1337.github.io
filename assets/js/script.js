@@ -4,13 +4,9 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const sidebar = document.querySelector("[data-sidebar]"); 
 const mainContent = document.querySelector("[main-content]");
-
-sidebarBtn.addEventListener("click", function () {
-  elementToggleFunc(sidebar);
-});
+ 
 
 //determines which image to put in the modal that is for closer view of screenshots.
 var img1 = document.getElementById("img1");
