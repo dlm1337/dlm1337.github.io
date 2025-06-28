@@ -16,7 +16,7 @@ sidebarBtn.addEventListener("click", function () {
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var img3 = document.getElementById("img3");
-var img4 = document.getElementById("img4"); 
+var img4 = document.getElementById("img4");
 
 var modal = document.getElementById("myModal");
 
@@ -41,7 +41,7 @@ img4.onclick = function () {
   var src = img4.lastElementChild.src;
   modal.style.display = "block";
   modalImage.src = src;
-}; 
+};
 //modal for closer view at screenshots.
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -90,9 +90,10 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
+navigationLinks[0].classList.add("active");
 const pages = document.querySelectorAll("[data-page]");
 
-//Activates HTML article chosen on the tabs.
+//Grabs the page picked on the navbar.
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
