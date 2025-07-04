@@ -4,7 +4,7 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 const mainContent = document.querySelector("[main-content]");
 const hideSideBar = document.getElementsByClassName("sidebar-info");
-
+//allows for minimizing the basic info and photo
 var x = 0;
 sidebarBtn.addEventListener("click", function () {
   if (x % 2 == 0) {
