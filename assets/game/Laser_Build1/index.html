@@ -12,23 +12,72 @@
   <script>
     var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Laser_Build1.json", { onProgress: UnityProgress });
   </script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+    }
+
+    .webgl-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .aspect-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      /* modern responsive scaling */
+      background-color: black;
+    }
+
+    #unityContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      color: white;
+      background: #111;
+      width: 100%;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
   <div class="webgl-content">
-    <!-- Aspect-ratio container -->
-    <div style="position: relative; width: 100%; padding-top: 56.25%;">
-      <!-- Unity Canvas goes here (Unity will inject it dynamically) -->
-      <div id="unityContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <!-- RESPONSIVE CANVAS AREA -->
+    <div class="aspect-wrapper">
+      <div id="unityContainer"></div>
     </div>
 
-    <!-- Move footer OUTSIDE of aspect-ratio container -->
+    <!-- FOOTER SEPARATE -->
     <div class="footer">
       <div class="webgl-logo"></div>
-      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)">Fullscreen</div>
       <div class="title">Laser</div>
     </div>
   </div>
-</body>
 
 </html>
