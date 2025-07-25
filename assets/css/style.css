@@ -141,6 +141,7 @@ article {
   box-shadow: var(--shadow-1);
   z-index: 1;
   display: none;
+  min-height: 560px;
 }
 
 .icon-box {
@@ -1438,7 +1439,7 @@ textarea.form-input::-webkit-resizer {
     border-radius: 20px;
     border: 2px solid var(--orange-yellow-crayola);
   }
- 
+
   .info-content .name {
     white-space: nowrap;
     text-align: center;
