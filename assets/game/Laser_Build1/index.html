@@ -16,13 +16,14 @@
 
 <body>
   <!-- Aspect-ratio wrapper for Unity WebGL -->
-  <div id="unityContainer" style="position: relative; width: 100%; padding-top: 56.25%;">
+  <div id="unityContainer" style="position: relative; width: 100%; padding-top: 56.25%; min-height: 560px;">
     <canvas style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></canvas>
-  </div>
-  <div class="footer">
-    <div class="webgl-logo"></div>
-    <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-    <div class="title">Laser</div>
+
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      <div class="title">Laser</div>
+    </div>
   </div>
 </body>
 
