@@ -16,17 +16,19 @@
 
 <body>
   <div class="webgl-content">
-    <div id="unityContainer" style="position: relative; width: 100%; padding-top: 56.25%; min-height: 560px;">
-      <canvas style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></canvas>
+    <!-- Aspect-ratio container -->
+    <div style="position: relative; width: 100%; padding-top: 56.25%;">
+      <!-- Unity Canvas goes here (Unity will inject it dynamically) -->
+      <div id="unityContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    </div>
 
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Laser</div>
-      </div>
+    <!-- Move footer OUTSIDE of aspect-ratio container -->
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      <div class="title">Laser</div>
     </div>
   </div>
-
 </body>
 
 </html>
