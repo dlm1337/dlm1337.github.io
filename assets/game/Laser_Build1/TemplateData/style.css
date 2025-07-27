@@ -28,9 +28,7 @@ body {
 .aspect-wrapper {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
-    /* modern responsive scaling */
+    height: 100%; /* NEW */
     background-color: black;
 }
 
