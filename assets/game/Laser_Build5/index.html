@@ -11,7 +11,13 @@
     UnityLoader.instantiate("unityContainer", "Build/Laser_Build5.json");
   </script>
 </head>
-
+<script>
+  //Telling unity if it is desktop or touch device.
+  window.isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+  function GetIsMobile() {
+    return window.isMobile ? 1 : 0;
+  } 
+</script>
 
 <body>
   <div class="webgl-content">
