@@ -141,7 +141,7 @@ article {
   box-shadow: var(--shadow-1);
   z-index: 1;
   display: none;
-  min-height: 560px;
+  min-height: 700px;
 }
 
 .icon-box {
