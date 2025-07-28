@@ -990,6 +990,7 @@ textarea.form-input::-webkit-resizer {
   .game-wrapper {
     position: relative;
     left: -206px;
+    top: -15px;
     width: 720px;
     aspect-ratio: 9 / 16;
     max-height: 80vh;
