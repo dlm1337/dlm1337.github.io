@@ -22,7 +22,7 @@ sidebarBtn.addEventListener("click", function () {
   x++;
 });
 
-//determines which image to put in the modal that is for closer view of screenshots.
+//images for projects
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var img3 = document.getElementById("img3");
