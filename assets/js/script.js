@@ -72,7 +72,7 @@ const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 const filterItems = document.querySelectorAll("[data-filter-item]");
-
+//active class causes an animation and highlights the clicked on tab.
 const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === "all") {
@@ -86,7 +86,7 @@ const filterFunc = function (selectedValue) {
 };
 
 let lastClickedBtn = filterBtn[0];
-//determines active tab(highlights)
+//listens for clicks for each tab on the nav-bar. calls the filler func to handle which should be active.
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
@@ -123,7 +123,7 @@ function game() {
   sidebar.style.display = "none";
   mainContent.style.width = "100%";
 }
-
+//changes display to article represented on the nav-bar.
 function resetSidebar() {
   sidebar.style.display = "block";
 }
