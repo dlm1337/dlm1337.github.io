@@ -1,9 +1,26 @@
 "use strict";
-
+//for closing sidebar where basic info is.
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-const mainContent = document.querySelector("[main-content]");
 const hideSideBar = document.getElementsByClassName("sidebar-info");
+
+//change the viewing area for gaming.
+const mainContent = document.querySelector("[main-content]");
+
+//images for projects article tab. Opens modal to view closer on click.
+const img1 = document.getElementById("img1");
+const img3 = document.getElementById("img3");
+const img4 = document.getElementById("img4");
+
+//modal for closer view at screenshots on projects article tab.
+var modal = document.getElementById("myModal");
+var modalImage = document.getElementById("portfolio-modal-image");
+const portfolioModalClose = document.getElementById("portfolio-modal-close");
+
+//nav-bar event handling.
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
 //allows for minimizing the basic info and photo
 var x = 0;
 sidebarBtn.addEventListener("click", function () {
@@ -22,16 +39,7 @@ sidebarBtn.addEventListener("click", function () {
   x++;
 });
 
-//images for projects article. Opens modal to view closer on click.
-var img1 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var img3 = document.getElementById("img3");
-var img4 = document.getElementById("img4");
-
-var modal = document.getElementById("myModal");
-
-var modalImage = document.getElementById("portfolio-modal-image");
-
+//brings up closer view of project images.
 img1.onclick = function () {
   var src = img1.lastElementChild.src;
   modal.style.display = "block";
@@ -52,58 +60,16 @@ img4.onclick = function () {
   modal.style.display = "block";
   modalImage.src = src;
 };
-//modal for closer view at screenshots.
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
 
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-const portfolioModalClose = document.getElementById("portfolio-modal-close");
-
+//closes the pop-up modal view at projects.
 portfolioModalClose.addEventListener("click", async () => {
   modal.style.display = "none";
 });
 
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-const filterItems = document.querySelectorAll("[data-filter-item]");
-//active class causes an animation and highlights the clicked on tab.
-const filterFunc = function (selectedValue) {
-  for (let i = 0; i < filterItems.length; i++) {
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-  }
-};
-
-let lastClickedBtn = filterBtn[0];
-//listens for clicks for each tab on the nav-bar. calls the filler func to handle which should be active.
-for (let i = 0; i < filterBtn.length; i++) {
-  filterBtn[i].addEventListener("click", function () {
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-  });
-}
-
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
+//sets landing page as default tab.
 navigationLinks[0].classList.add("active");
-const pages = document.querySelectorAll("[data-page]");
-
-//Grabs the page picked on the navbar.
+//listen for clicks on all other tabs in nav-bar.
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
@@ -118,11 +84,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
 //space shooter game
 function game() {
   sidebar.style.display = "none";
   mainContent.style.width = "100%";
 }
+
 //changes display to article represented on the nav-bar.
 function resetSidebar() {
   sidebar.style.display = "block";
