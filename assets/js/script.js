@@ -9,6 +9,7 @@ const mainContent = document.querySelector("[main-content]");
 
 //images for projects article tab. Opens modal to view closer on click.
 const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 
