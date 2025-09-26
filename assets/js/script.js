@@ -12,6 +12,7 @@ const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
+const img5 = document.getElementById("img5");
 
 //modal for closer view at screenshots on projects article tab.
 var modal = document.getElementById("myModal");
@@ -58,6 +59,11 @@ img3.onclick = function () {
 };
 img4.onclick = function () {
   var src = img4.lastElementChild.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+img5.onclick = function () {
+  var src = img5.lastElementChild.src;
   modal.style.display = "block";
   modalImage.src = src;
 };
